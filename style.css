@@ -457,7 +457,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .5);
 }
 
 button {
@@ -484,7 +484,11 @@ button {
 }
 
 .sm-shadow {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, .3);
+}
+
+.blur-black {
+    text-shadow: 0px 0px 10px black;
 }
 
 .panel-sq,
@@ -543,10 +547,10 @@ a[data-lightbox]:hover::before {
     width: 50px;
     height: 50px;
     margin-left: -25px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, .6);
+    border-radius: 50%; 
+    background: #364577; 
     color: #FFF;
-    font-weight: 100;
+    font-weight: 900;
     z-index: 1;
     position: absolute;
     top: 50%;
@@ -584,6 +588,8 @@ a[data-lightbox]:hover img {
     left: 15px;
     right: 15px;
     bottom: 5px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .close-lightbox {
@@ -593,30 +599,28 @@ a[data-lightbox]:hover img {
     top: 20px;
     right: 20px;
     z-index: 20;
-    background: rgba(0, 0, 0, .5);
+    background: #364577; 
     border: none;
     line-height: 30px;
     padding: 0 9px 5px;
-    opacity: 0.3;
 }
 
 .close-lightbox:hover,
 .next-lightbox:hover,
 .prev-lightbox:hover {
-    opacity: 1.0;
+    opacity: .7;
     color: #FFF;
 }
 
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
-    color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
+    color: white!important;
+    background: #364577; 
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
     z-index: 1;
-    opacity: 0.4;
 }
 
 .next-lightbox {
@@ -654,6 +658,10 @@ a {
     color: #575757!important;
 }
 
+.scrollToTop{
+color:white!important;
+}
+
 .container {
     max-width: 1000px;
 }
@@ -676,8 +684,13 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
+label, p {
+    font-size: 16px;
+}
+
+label{
+    font-weight: bold;
+    color: #364577!important;
 }
 
 .tight-width-whitespace {
@@ -704,13 +717,21 @@ p {
     margin: auto auto auto auto;
 }
 
-h2 {
+h1, h2{
+    font-weight: bold;
+}
+
+h2,
+blockquote * {
     font-size: 22px;
     line-height: 1.4em;
 }
+blockquote + figcaption *{
+    font-size: 18px;
+}
 
 h3 {
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -739,6 +760,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.dark-slate-blue {
+    color: #364577!important;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -753,11 +778,12 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #7c4d38; opacity:  0.85;
     padding: 40px 40px 40px 40px;
 }
 
 .bold-link {
+    font-size: 18px;
     font-weight: 900;
     text-decoration: underline!important;
 }
@@ -771,21 +797,21 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #f2ab8a;
 }
 
 .tc-white {
-    color: #F3976C!important;
+/*    color: #f2ab8a!important;*/
+color:#FFE069!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #f2ab8a;
+    color: #364577!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #FFE069!important;
 }
 
 .ltc-white {
@@ -797,11 +823,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #f2ab8a!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #7c4d38!important;
 }
 
 .icon-dark-slate-blue {
