@@ -1081,9 +1081,12 @@ a:not(.btn):not(.social):not(.bold-link):focus{
     background-color:  rgba(255, 224, 105,0.4)!important;
 }
 
-a.social:focus{
+
+a.social:focus span.fa{
     text-shadow: 0 0 20px white ; 
+    transform: scale(1.25);
 }
+
 
 a.bold-link:focus{
     text-shadow: 0 0 20px #FFE069 ;

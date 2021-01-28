@@ -61,7 +61,7 @@ function getFillHeight() {
 function scrollToTarget(t) {
     1 == t ? t = 0 : 2 == t ? t = $(document).height() : (t = $(t).offset().top, $(".sticky-nav").length && (t -= $(".sticky-nav .navbar-header").height())), $("html,body").animate({
         scrollTop: t
-    }, "slow"), $(".navbar-collapse").collapse("hide")
+    }, "slow"), $(".navbar-collapse").collapse("hide");
 }
 
 function animateWhenVisible() {
@@ -109,7 +109,13 @@ function inViewCheck() {
 }
 
 function scrollToTopView() {
-    $(window).scrollTop() > $(window).height() / 3 ? $(".scrollToTop").hasClass("showScrollTop") || $(".scrollToTop").addClass("showScrollTop") : $(".scrollToTop").removeClass("showScrollTop")
+    if($(window).scrollTop() > $(window).height() / 5){
+        $(".scrollToTop").addClass("showScrollTop");
+        if(!document.querySelector(".scrollToTop").hasAttribute("href")){ document.querySelector(".scrollToTop").setAttribute("href","#")} ;  
+    }else{
+        $(".scrollToTop").removeClass("showScrollTop");
+        if(document.querySelector(".scrollToTop").hasAttribute("href")){ document.querySelector(".scrollToTop").removeAttribute("href")} ;  
+    }
 }
 
 function setUpVisibilityToggle() {
