@@ -1068,33 +1068,39 @@ color:#FFE069!important;
 }
 
 
+a.bold-link:hover{
+    color:#FFE069!important;
+}   
+
+li>a> img,
+.btn, a,
+a.social span.fa{
+    transition: transform 0.3s ease-in-out;
+}
+
 .btn:not(.scrollToTop):focus{
  box-shadow: inset 0 0 20px #FFE069 ; 
+ transform:scale(1.05);
 }
+
 
 li>a:focus > img,
 .scrollToTop:focus{
     box-shadow: 0 0 20px #FFE069 ; 
 }
 
-a:not(.btn):not(.social):not(.bold-link):focus{
-    background-color:  rgba(255, 224, 105,0.4)!important;
+a:not(.social):not(.btn):focus{
+    text-shadow: 0 0 20px #FFE069 ;
 }
-
 
 a.social:focus span.fa{
     text-shadow: 0 0 20px white ; 
     transform: scale(1.25);
 }
 
-
-a.bold-link:focus{
-    text-shadow: 0 0 20px #FFE069 ;
+a:not(.social):focus{
+    transform: scale(1.05);
 }
-
-a.bold-link:hover{
-    color:#FFE069!important;
-}   
 
 .portfolio-thumb{
     width: 100%;
