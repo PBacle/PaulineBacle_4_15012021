@@ -491,6 +491,14 @@ button {
     text-shadow: 0px 0px 10px black;
 }
 
+.yellow-blur{
+    text-shadow: 0px 0px 10px #FFE069;
+}
+
+.bold{
+font-weight: bold;
+}
+
 .panel-sq,
 .panel-sq .panel-heading,
 .panel-sq .panel-footer {
@@ -1090,7 +1098,7 @@ li>a:focus > img,
 }
 
 a:not(.social):not(.btn):focus{
-    text-shadow: 0 0 20px #FFE069 ;
+    text-shadow: 0 0 10px #FFE069 ;
 }
 
 a.social:focus span.fa{
@@ -1099,7 +1107,7 @@ a.social:focus span.fa{
 }
 
 a:not(.social):focus{
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .portfolio-thumb{

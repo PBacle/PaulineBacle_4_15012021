@@ -109,12 +109,15 @@ function inViewCheck() {
 }
 
 function scrollToTopView() {
-    if($(window).scrollTop() > $(window).height() / 5){
-        $(".scrollToTop").addClass("showScrollTop");
-        if(!document.querySelector(".scrollToTop").hasAttribute("href")){ document.querySelector(".scrollToTop").setAttribute("href","#")} ;  
-    }else{
-        $(".scrollToTop").removeClass("showScrollTop");
-        if(document.querySelector(".scrollToTop").hasAttribute("href")){ document.querySelector(".scrollToTop").removeAttribute("href")} ;  
+    if($(".scrollToTop").length != 0){
+        if($(window).scrollTop() > $(window).height() / 5){
+    
+            $(".scrollToTop").addClass("showScrollTop");
+            if(!document.querySelector(".scrollToTop").hasAttribute("href")){ document.querySelector(".scrollToTop").setAttribute("href","#")} ;  
+        }else{
+            $(".scrollToTop").removeClass("showScrollTop");
+            if(document.querySelector(".scrollToTop").hasAttribute("href")){ document.querySelector(".scrollToTop").removeAttribute("href")} ;  
+        }
     }
 }
 
