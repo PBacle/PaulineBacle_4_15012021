@@ -1,9 +1,11 @@
-# PaulineBacle_4_15012021
-Projet 4 de la formation "Développement Web" d'Openclassrooms : "Optimisez un site existant" 
+#  OpenClassrooms-Développeur Web 📎 Projet 4 - Optimisez un site existant
 
+👤 &nbsp; **Pauline BACLE** [🇫🇷 Contactez moi ](<bacle-pauline@orage.fr>)
+_`Début du projet le 15/01/2021`_
 
-CONTAINS :
-index.html contact.html README.md style.css
+## Contenu de ce repository
+
+* index.html contact.html README.md style.css
 
 css/
     bootstrap.css et-line.css   font-awesome.css
